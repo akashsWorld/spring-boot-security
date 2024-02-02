@@ -14,8 +14,12 @@ public class SecurityController {
     public String getWish(){
         return "Hello from getWish";
     }
-//    @PostMapping
-//    public String postWish(){
-//        return "Hello from postWish";
-//    }
+
+/*    Spring security only allows GET request not the POST requests, and provide a by default CSRF() protection.
+    so we have to manually disable it to configure the httpSecurity by our self.
+    Because if the application totally work on Rest endpoint then it is a unusable thing. */
+    @PostMapping
+    public String postWish(){
+        return "Hello from postWish";
+    }
 }
