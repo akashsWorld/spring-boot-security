@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: o-auth-server
+
+  datasource:
+    username: amigoscode
+    password: password
+    url: jdbc:postgresql://localhost:5432/customer
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: 'true'
+
+      hibernate:
+        ddl-auto: update
+      show-sql: 'true'
