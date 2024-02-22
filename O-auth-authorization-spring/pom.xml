@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>o-auth-authorization-server</module>
+        <module>o-auth-2-authorization-client</module>
     </modules>
 
     <dependencyManagement>

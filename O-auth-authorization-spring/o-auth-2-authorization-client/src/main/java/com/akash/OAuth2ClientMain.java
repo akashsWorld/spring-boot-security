@@ -1,13 +1,12 @@
-package com.akash.auth_server;
+package com.akash;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 @SpringBootApplication
-public class AuthServerMain {
+public class OAuth2ClientMain {
     public static void main(String[] args) {
-
-        SpringApplication.run(AuthServerMain.class,args);
+        SpringApplication.run(OAuth2ClientMain.class,args);
     }
 }
